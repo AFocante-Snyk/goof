@@ -42,9 +42,3 @@ jobs:
       run: |
          snyk monitor --severity-threshold=high --project-name=github_action_demo
       continue-on-error: true
-
-    # Upload HTML file as artifact
-    - name: Upload HTML Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        path: snyk_test_results.html
